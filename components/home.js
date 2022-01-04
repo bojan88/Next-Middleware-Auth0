@@ -1,16 +1,8 @@
-// import { useAuth0 } from '@auth0/auth0-react'
-// import { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 function Home() {
-  // const { getAccessTokenSilently } = useAuth0()
-
-  // useEffect(() => {
-  //   getAccessTokenSilently().then((token) => console.log(token))
-  // }, [getAccessTokenSilently])
-
   return (
     <div className={styles.container}>
       <Head>

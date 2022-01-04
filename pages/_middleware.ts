@@ -39,7 +39,7 @@ export async function middleware(req: NextRequest, ev: NextFetchEvent) {
       // TODO: get previous URL from the cookie and remove it
       const res = NextResponse.redirect('/');
       // TODO: add expire
-      res.cookie('token', id_token, { httpOnly: true });
+      res.cookie('token', id_token, { httpOnly: true, secure: true });
       return res;
     }
 
